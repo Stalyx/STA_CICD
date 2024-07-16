@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>74833ba797dfc214b4b27ca0f053afcc</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_275773_sta_cicd_cicd_install_apps">
+    <x_275773_sta_cicd_cicd_install_apps action="INSERT_OR_UPDATE">
+        <app_id>75f8d53373fe330001073cf2c4f6a7b6</app_id>
+        <category>agile</category>
+        <comments>This application supports Atlassian Jira Integrations Common, Microsoft Azure DevOps Integrations Common, and Strategic Planning Workspace Integrations for Shared Infrastructure.</comments>
+        <install_key>75f8d53373fe330001073cf2c4f6a7b6</install_key>
+        <name>Work Item Integrations Common</name>
+        <number>CICD0001139</number>
+        <status>evaluate</status>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:34:24</sys_created_on>
+        <sys_id>74833ba797dfc214b4b27ca0f053afcc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:34:24</sys_updated_on>
+        <type>application</type>
+        <version>1.9.0</version>
+    </x_275773_sta_cicd_cicd_install_apps>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:48:34</sys_created_on>
+        <sys_id>1cc6732f97dfc214b4b27ca0f053aff1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Work Item Integrations Common</sys_name>
+        <sys_package display_value="STA CICD" source="x_275773_sta_cicd">ffab9723975fc214b4b27ca0f053aff0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="STA CICD">ffab9723975fc214b4b27ca0f053aff0</sys_scope>
+        <sys_update_name>sys_metadata_link_1cc6732f97dfc214b4b27ca0f053aff1</sys_update_name>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:48:34</sys_updated_on>
+        <tablename>x_275773_sta_cicd_cicd_install_apps</tablename>
+    </sys_metadata_link>
+</record_update>

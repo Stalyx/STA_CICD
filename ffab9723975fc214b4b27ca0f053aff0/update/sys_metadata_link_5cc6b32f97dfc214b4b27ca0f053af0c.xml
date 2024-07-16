@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>b0833ba797dfc214b4b27ca0f053afca</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_275773_sta_cicd_cicd_install_apps">
+    <x_275773_sta_cicd_cicd_install_apps action="INSERT_OR_UPDATE">
+        <app_id>f1c37d4e19b515102a18c1c2ee6a60ce</app_id>
+        <category>secops_vr</category>
+        <comments/>
+        <install_key>f1c37d4e19b515102a18c1c2ee6a60ce</install_key>
+        <name>Vulnerability Response Common</name>
+        <number>CICD0001132</number>
+        <status>evaluate</status>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:34:24</sys_created_on>
+        <sys_id>b0833ba797dfc214b4b27ca0f053afca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:34:24</sys_updated_on>
+        <type>application</type>
+        <version>2.3.0</version>
+    </x_275773_sta_cicd_cicd_install_apps>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:48:34</sys_created_on>
+        <sys_id>5cc6b32f97dfc214b4b27ca0f053af0c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Vulnerability Response Common</sys_name>
+        <sys_package display_value="STA CICD" source="x_275773_sta_cicd">ffab9723975fc214b4b27ca0f053aff0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="STA CICD">ffab9723975fc214b4b27ca0f053aff0</sys_scope>
+        <sys_update_name>sys_metadata_link_5cc6b32f97dfc214b4b27ca0f053af0c</sys_update_name>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:48:34</sys_updated_on>
+        <tablename>x_275773_sta_cicd_cicd_install_apps</tablename>
+    </sys_metadata_link>
+</record_update>

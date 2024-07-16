@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>60833ba797dfc214b4b27ca0f053afb2</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_275773_sta_cicd_cicd_install_apps">
+    <x_275773_sta_cicd_cicd_install_apps action="INSERT_OR_UPDATE">
+        <app_id>com.snc.pa.premium.all_content</app_id>
+        <category>itsm</category>
+        <comments/>
+        <install_key>com.snc.pa.premium.all_content</install_key>
+        <name>Performance Analytics - Content Packs for ITSM</name>
+        <number>CICD0001068</number>
+        <status>evaluate</status>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:34:24</sys_created_on>
+        <sys_id>60833ba797dfc214b4b27ca0f053afb2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:34:24</sys_updated_on>
+        <type>plugin</type>
+        <version/>
+    </x_275773_sta_cicd_cicd_install_apps>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:48:15</sys_created_on>
+        <sys_id>63a6bfeb97dfc214b4b27ca0f053af1a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Performance Analytics - Content Packs for ITSM</sys_name>
+        <sys_package display_value="STA CICD" source="x_275773_sta_cicd">ffab9723975fc214b4b27ca0f053aff0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="STA CICD">ffab9723975fc214b4b27ca0f053aff0</sys_scope>
+        <sys_update_name>sys_metadata_link_63a6bfeb97dfc214b4b27ca0f053af1a</sys_update_name>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:48:15</sys_updated_on>
+        <tablename>x_275773_sta_cicd_cicd_install_apps</tablename>
+    </sys_metadata_link>
+</record_update>

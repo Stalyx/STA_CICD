@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="a0c2776797dfc214b4b27ca0f053affe" extends="sys_import_set_row" label="CICD Application List Import" max_length="40" name="x_275773_sta_cicd_cicd_application_list_import" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=ID" label="ID" max_length="47" name="u_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Comments" label="Comments" max_length="382" name="u_comments" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Category" label="Category" max_length="40" name="u_category" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Status" label="Status" max_length="40" name="u_status" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Type" label="Type" max_length="40" name="u_type" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Name" label="Name" max_length="103" name="u_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=DO NOT CHANGE HERE - CHANGES TO BE DONE IN SERVICENOW!" label="DO NOT CHANGE HERE - CHANGES TO BE DONE IN SERVICENOW!" max_length="40" name="u_do_not_chang_in_servicenow_" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Version" label="Version" max_length="40" name="u_version" type="string"/>
+    </element>
+</database>

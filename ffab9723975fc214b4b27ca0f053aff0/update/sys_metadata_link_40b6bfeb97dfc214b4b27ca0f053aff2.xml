@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>e8833ba797dfc214b4b27ca0f053afad</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_275773_sta_cicd_cicd_install_apps">
+    <x_275773_sta_cicd_cicd_install_apps action="INSERT_OR_UPDATE">
+        <app_id/>
+        <category>secops_sir</category>
+        <comments>ntegrating ServiceNow® Security Incident Response with the Microsoft Exchange Online service, part of the Microsoft Office 365 suite of products, provides a security operations center (SOC) analyst with an email search and delete capability. With this integration, your SOC analyst can search your corporate email environment for security-related threats and remove phishing emails.</comments>
+        <install_key>032838c30b2332009f66e94685673aa8</install_key>
+        <name>Microsoft Exchange Online for Security Operations</name>
+        <number>CICD0001054</number>
+        <status>evaluate</status>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:34:24</sys_created_on>
+        <sys_id>e8833ba797dfc214b4b27ca0f053afad</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:44:41</sys_updated_on>
+        <type>application</type>
+        <version>10.5.4</version>
+    </x_275773_sta_cicd_cicd_install_apps>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:48:17</sys_created_on>
+        <sys_id>40b6bfeb97dfc214b4b27ca0f053aff2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Microsoft Exchange Online for Security Operations</sys_name>
+        <sys_package display_value="STA CICD" source="x_275773_sta_cicd">ffab9723975fc214b4b27ca0f053aff0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="STA CICD">ffab9723975fc214b4b27ca0f053aff0</sys_scope>
+        <sys_update_name>sys_metadata_link_40b6bfeb97dfc214b4b27ca0f053aff2</sys_update_name>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:48:17</sys_updated_on>
+        <tablename>x_275773_sta_cicd_cicd_install_apps</tablename>
+    </sys_metadata_link>
+</record_update>

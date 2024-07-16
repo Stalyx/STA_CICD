@@ -1,0 +1,1635 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=2647000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>25000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Automatic Deployment of Applications and Plugins</description>
+        <display_name_after_preview/>
+        <flow_priority/>
+        <generation_source/>
+        <internal_name>cicd_batch_deployment</internal_name>
+        <label_cache>[{"name":"dd07cc85-50f1-483c-9262-061a5b668427.results_id","label":"9 - Batch Install➛Results ID","reference_display":"Results ID","type":"string","base_type":"string","usedInstances":{"c32257ca-f5f0-4fd8-a53b-df60b55cf511":["result_id"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"1a379e2c-cca9-462a-8e5c-be81f54ae2c2"}},{"name":"flow_variable.install_plan","label":"Flow Variables➛Install Plan","type":"string","base_type":"string","usedInstances":{"dd07cc85-50f1-483c-9262-061a5b668427":["batch_plan"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"62049c20-ef37-438c-8ede-e9d967d97c91"}},{"name":"f83052d6-f124-4566-8eb3-c0d1d17a0fd2.item.type","label":"3 - For Each➛CICD Install Apps Record➛Type","reference":"","reference_display":"Type","type":"choice","base_type":"choice","parent_table_name":"x_275773_sta_cicd_cicd_install_apps","column_name":"type","choices":[{"missing":false,"label":"Application","used":false,"image":"","rawLabel":"Application","selected":false,"reference":false,"value":"application","parameters":{"name":"x_275773_sta_cicd_cicd_install_apps"}},{"missing":false,"label":"Plugin","used":false,"image":"","rawLabel":"Plugin","selected":false,"reference":false,"value":"plugin","parameters":{"name":"x_275773_sta_cicd_cicd_install_apps"}}],"usedInstances":{"7e7a317f-3c16-46fb-b3ad-c84bec472435":["condition"]}},{"name":"db84ade7-1c19-4425-a294-c10f60b8a719.Records","label":"2 - Look Up Records➛CICD Install Apps Records","reference":"x_275773_sta_cicd_cicd_install_apps","reference_display":"CICD Install Apps","type":"records","base_type":"records","usedInstances":{"f83052d6-f124-4566-8eb3-c0d1d17a0fd2":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master_snapshot>a5b1bbe397dfc214b4b27ca0f053afef</master_snapshot>
+        <name>CICD Batch Deployment</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>82b1fbe397dfc214b4b27ca0f053afe0</remote_trigger_id>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:09:10</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4fbd6f2f979fc214b4b27ca0f053aff9</sys_id>
+        <sys_mod_count>34</sys_mod_count>
+        <sys_name>CICD Batch Deployment</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="STA CICD" source="x_275773_sta_cicd">ffab9723975fc214b4b27ca0f053aff0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="STA CICD">ffab9723975fc214b4b27ca0f053aff0</sys_scope>
+        <sys_update_name>sys_hub_flow_4fbd6f2f979fc214b4b27ca0f053aff9</sys_update_name>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:53:22</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=4fbd6f2f979fc214b4b27ca0f053aff9"/>
+    <sys_variable_value action="delete_multiple" query="document_key=4fbd6f2f979fc214b4b27ca0f053aff9"/>
+    <sys_flow_timer_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <day_of_month>1</day_of_month>
+        <day_of_week/>
+        <name/>
+        <run_period/>
+        <run_start>2024-07-16 03:10:00</run_start>
+        <sys_class_name>sys_flow_timer_trigger</sys_class_name>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:26:35</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>82b1fbe397dfc214b4b27ca0f053afe0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="STA CICD">ffab9723975fc214b4b27ca0f053aff0</sys_scope>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:26:35</sys_updated_on>
+        <time/>
+        <timer_type>0</timer_type>
+    </sys_flow_timer_trigger>
+    <sys_flow_trigger_auto_script action="delete_multiple" query="name=Trigger:82b1fbe397dfc214b4b27ca0f053afe0^sys_idNOT IN4ab1fbe397dfc214b4b27ca0f053afe0"/>
+    <sys_flow_trigger_auto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <max_drift/>
+        <name>Trigger:82b1fbe397dfc214b4b27ca0f053afe0</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <run_as display_value="Alexander Steinmetz">55519b962fac8a1073acd0ccf699b627</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek/>
+        <run_period/>
+        <run_start>2024-07-16 03:10:00</run_start>
+        <run_time/>
+        <run_type>once</run_type>
+        <script><![CDATA[sn_flow_trigger.FlowTriggerAPI.fireTimerTrigger('82b1fbe397dfc214b4b27ca0f053afe0');]]></script>
+        <sys_class_name>sys_flow_trigger_auto_script</sys_class_name>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:26:35</sys_created_on>
+        <sys_id>4ab1fbe397dfc214b4b27ca0f053afe0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="STA CICD">ffab9723975fc214b4b27ca0f053aff0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:26:35</sys_updated_on>
+        <time_zone/>
+        <trigger display_value="">82b1fbe397dfc214b4b27ca0f053afe0</trigger>
+        <upgrade_safe>true</upgrade_safe>
+    </sys_flow_trigger_auto_script>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=4fbd6f2f979fc214b4b27ca0f053aff9"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=4fbd6f2f979fc214b4b27ca0f053aff9^sys_idNOT IN272e236f979fc214b4b27ca0f053af6c"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="CICD Batch Deployment">4fbd6f2f979fc214b4b27ca0f053aff9</flow>
+        <name>Run Once</name>
+        <remote_sys_id/>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:11:06</sys_created_on>
+        <sys_id>272e236f979fc214b4b27ca0f053af6c</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:53:22</sys_updated_on>
+        <trigger_definition display_value="Run Once">0a76e504c32222002841b63b12d3aeac</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>run_once</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=272e236f979fc214b4b27ca0f053af6c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>272e236f979fc214b4b27ca0f053af6c</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:11:06</sys_created_on>
+        <sys_id>af2e236f979fc214b4b27ca0f053af6d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:25:18</sys_updated_on>
+        <value>2024-07-16 05:10:00</value>
+        <variable display_value="Run in">92afcd94c32222002841b63b12d3aee8</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_input_0a76e504c32222002841b63b12d3aeac^id=272e236f979fc214b4b27ca0f053af6c"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=4fbd6f2f979fc214b4b27ca0f053aff9"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=4fbd6f2f979fc214b4b27ca0f053aff9^sys_idNOT INc3bd6f2f979fc214b4b27ca0f053affc"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>4fbd6f2f979fc214b4b27ca0f053aff9</id>
+        <name>CICD Batch Deployment</name>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:09:10</sys_created_on>
+        <sys_id>c3bd6f2f979fc214b4b27ca0f053affc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:09:10</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=c3bd6f2f979fc214b4b27ca0f053affc"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=4fbd6f2f979fc214b4b27ca0f053aff9"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=4fbd6f2f979fc214b4b27ca0f053aff9"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=4fbd6f2f979fc214b4b27ca0f053aff9"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=4fbd6f2f979fc214b4b27ca0f053aff9^sys_idNOT IN1780fb6397dfc214b4b27ca0f053afd2,3e4f67ef979fc214b4b27ca0f053afdc,7450376397dfc214b4b27ca0f053afe5"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Batch Results">64ca16f8c3131010ca199a038a40dda3</action_type>
+        <action_type_parent display_value="Batch Results">e43284c4c3931010ca199a038a40dd03</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="CICD Batch Deployment">4fbd6f2f979fc214b4b27ca0f053aff9</flow>
+        <generation_source/>
+        <order>10</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:21:28</sys_created_on>
+        <sys_id>1780fb6397dfc214b4b27ca0f053afd2</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="STA CICD">ffab9723975fc214b4b27ca0f053aff0</sys_scope>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:53:22</sys_updated_on>
+        <ui_id>c32257ca-f5f0-4fd8-a53b-df60b55cf511</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=1780fb6397dfc214b4b27ca0f053afd2"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>1780fb6397dfc214b4b27ca0f053afd2</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:24:09</sys_created_on>
+        <sys_id>ae2137a397dfc214b4b27ca0f053afa8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:26:31</sys_updated_on>
+        <value>1fbbaf6b979fc214b4b27ca0f053af89</value>
+        <variable display_value="Credential Alias">a8ca16f8c3131010ca199a038a40dda4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=1780fb6397dfc214b4b27ca0f053afd2"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>credential_alias</field>
+        <id>1780fb6397dfc214b4b27ca0f053afd2</id>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:24:09</sys_created_on>
+        <sys_id>6a2137a397dfc214b4b27ca0f053afa8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:24:09</sys_updated_on>
+        <table>var__m_sys_hub_action_input_64ca16f8c3131010ca199a038a40dda3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>result_id</field>
+        <id>1780fb6397dfc214b4b27ca0f053afd2</id>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:24:09</sys_created_on>
+        <sys_id>2e2137a397dfc214b4b27ca0f053afa8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:24:09</sys_updated_on>
+        <table>var__m_sys_hub_action_input_64ca16f8c3131010ca199a038a40dda3</table>
+        <value>{{dd07cc85-50f1-483c-9262-061a5b668427.results_id}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=1780fb6397dfc214b4b27ca0f053afd2^sys_idNOT INea2137a397dfc214b4b27ca0f053afa7,ee2137a397dfc214b4b27ca0f053afa7"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>instance_url</input_name>
+        <instance>1780fb6397dfc214b4b27ca0f053afd2</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"instance_url":{"scriptActive":true,"script":"var instance \u003d gs.getProperty(\u0027instance_name\u0027);\nreturn \u0027https://\u0027 + instance + \u0027.service-now.com\u0027;"}}</script>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:24:09</sys_created_on>
+        <sys_id>ea2137a397dfc214b4b27ca0f053afa7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:24:09</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <input_name>result_id</input_name>
+        <instance>1780fb6397dfc214b4b27ca0f053afd2</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"result_id":{"scriptActive":false}}</script>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:24:09</sys_created_on>
+        <sys_id>ee2137a397dfc214b4b27ca0f053afa7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:26:31</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=1780fb6397dfc214b4b27ca0f053afd2"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="CICD Batch Deployment">4fbd6f2f979fc214b4b27ca0f053aff9</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:15:58</sys_created_on>
+        <sys_id>3e4f67ef979fc214b4b27ca0f053afdc</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="STA CICD">ffab9723975fc214b4b27ca0f053aff0</sys_scope>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:53:22</sys_updated_on>
+        <ui_id>db84ade7-1c19-4425-a294-c10f60b8a719</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=3e4f67ef979fc214b4b27ca0f053afdc"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>3e4f67ef979fc214b4b27ca0f053afdc</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:16:25</sys_created_on>
+        <sys_id>916f23ef979fc214b4b27ca0f053af4c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:16:25</sys_updated_on>
+        <value>x_275773_sta_cicd_cicd_install_apps</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>3e4f67ef979fc214b4b27ca0f053afdc</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:16:25</sys_created_on>
+        <sys_id>d56f23ef979fc214b4b27ca0f053af4b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:16:25</sys_updated_on>
+        <value>name</value>
+        <variable display_value="Order by">c7400a1587003300663ca1bb36cb0b55</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>3e4f67ef979fc214b4b27ca0f053afdc</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:16:25</sys_created_on>
+        <sys_id>dd6f23ef979fc214b4b27ca0f053af4b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:16:25</sys_updated_on>
+        <value>status=install</value>
+        <variable display_value="Conditions">8f400a1587003300663ca1bb36cb0b50</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b^id=3e4f67ef979fc214b4b27ca0f053afdc"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=3e4f67ef979fc214b4b27ca0f053afdc"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=3e4f67ef979fc214b4b27ca0f053afdc"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Batch Install">89f446ebc3031010ca199a038a40dd7b</action_type>
+        <action_type_parent display_value="Batch Install">468535e3c3031010ca199a038a40dd3d</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="CICD Batch Deployment">4fbd6f2f979fc214b4b27ca0f053aff9</flow>
+        <generation_source/>
+        <order>9</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:20:29</sys_created_on>
+        <sys_id>7450376397dfc214b4b27ca0f053afe5</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="STA CICD">ffab9723975fc214b4b27ca0f053aff0</sys_scope>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:53:22</sys_updated_on>
+        <ui_id>dd07cc85-50f1-483c-9262-061a5b668427</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=7450376397dfc214b4b27ca0f053afe5"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>7450376397dfc214b4b27ca0f053afe5</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:21:13</sys_created_on>
+        <sys_id>ff707f2397dfc214b4b27ca0f053af38</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:26:31</sys_updated_on>
+        <value>1fbbaf6b979fc214b4b27ca0f053af89</value>
+        <variable display_value="Credential Alias">0df446ebc3031010ca199a038a40dd82</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=7450376397dfc214b4b27ca0f053afe5"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>batch_plan</field>
+        <id>7450376397dfc214b4b27ca0f053afe5</id>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:21:13</sys_created_on>
+        <sys_id>7f707f2397dfc214b4b27ca0f053af38</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:21:13</sys_updated_on>
+        <table>var__m_sys_hub_action_input_89f446ebc3031010ca199a038a40dd7b</table>
+        <value>{{flow_variable.install_plan}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>credential_alias</field>
+        <id>7450376397dfc214b4b27ca0f053afe5</id>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:21:13</sys_created_on>
+        <sys_id>bb707f2397dfc214b4b27ca0f053af38</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:21:13</sys_updated_on>
+        <table>var__m_sys_hub_action_input_89f446ebc3031010ca199a038a40dd7b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=7450376397dfc214b4b27ca0f053afe5^sys_idNOT IN23707f2397dfc214b4b27ca0f053af38"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>instance_url</input_name>
+        <instance>7450376397dfc214b4b27ca0f053afe5</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"instance_url":{"scriptActive":true,"script":"var instance \u003d gs.getProperty(\u0027instance_name\u0027);\nreturn \u0027https://\u0027 + instance + \u0027.service-now.com\u0027;"}}</script>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:21:13</sys_created_on>
+        <sys_id>23707f2397dfc214b4b27ca0f053af38</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:21:13</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=7450376397dfc214b4b27ca0f053afe5"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=4fbd6f2f979fc214b4b27ca0f053aff9"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=4fbd6f2f979fc214b4b27ca0f053aff9^sys_idNOT IN276f2bef979fc214b4b27ca0f053afc6,5400ffaf979fc214b4b27ca0f053af09,6b2e2b6f979fc214b4b27ca0f053af93,6fcf27ef979fc214b4b27ca0f053afde,8e207bef979fc214b4b27ca0f053af4d,9dff272397dfc214b4b27ca0f053af34,de8f6bef979fc214b4b27ca0f053af43"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">c1b17be397dfc214b4b27ca0f053afec</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="CICD Batch Deployment">4fbd6f2f979fc214b4b27ca0f053aff9</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:16:34</sys_created_on>
+        <sys_id>276f2bef979fc214b4b27ca0f053afc6</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="STA CICD">ffab9723975fc214b4b27ca0f053aff0</sys_scope>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:53:22</sys_updated_on>
+        <ui_id>f83052d6-f124-4566-8eb3-c0d1d17a0fd2</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=276f2bef979fc214b4b27ca0f053afc6"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_4fbd6f2f979fc214b4b27ca0f053aff9^id=276f2bef979fc214b4b27ca0f053afc6"/>
+    <sys_element_mapping action="delete_multiple" query="id=276f2bef979fc214b4b27ca0f053afc6"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>276f2bef979fc214b4b27ca0f053afc6</id>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:17:01</sys_created_on>
+        <sys_id>1e8f6bef979fc214b4b27ca0f053af4b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:17:01</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{db84ade7-1c19-4425-a294-c10f60b8a719.Records}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=276f2bef979fc214b4b27ca0f053afc6"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=276f2bef979fc214b4b27ca0f053afc6"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">51b1bbe397dfc214b4b27ca0f053af0d</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="CICD Batch Deployment">4fbd6f2f979fc214b4b27ca0f053aff9</flow>
+        <flow_variable/>
+        <flow_variables_assigned>install_plan</flow_variables_assigned>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>c4b44d90-2bb3-43e4-9a49-bff7ae19b0ae</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:19:05</sys_created_on>
+        <sys_id>5400ffaf979fc214b4b27ca0f053af09</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="STA CICD">ffab9723975fc214b4b27ca0f053aff0</sys_scope>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:53:22</sys_updated_on>
+        <ui_id>5d87afb8-d1c8-45b5-9ecb-db7c5a4e5b8c</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=5400ffaf979fc214b4b27ca0f053af09"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_4fbd6f2f979fc214b4b27ca0f053aff9^id=5400ffaf979fc214b4b27ca0f053af09"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=5400ffaf979fc214b4b27ca0f053af09"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=5400ffaf979fc214b4b27ca0f053af09^sys_idNOT INad10b72397dfc214b4b27ca0f053af1e"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>install_plan</input_name>
+        <instance>5400ffaf979fc214b4b27ca0f053af09</instance>
+        <referenced_table>sys_hub_flow_logic</referenced_table>
+        <script>{"install_plan":{"scriptActive":true,"script":"return fd_data.flow_var.install_plan + \u0027      {\\n         \"id\": \"\u0027 + fd_data._3__for_each.item.install_key + \u0027\",\\n         \"type\": \"\u0027 + fd_data._3__for_each.item.type + \u0027\",\\n         \"notes\": \"\u0027 + fd_data._3__for_each.item.name + \u0027(\u0027 + fd_data._3__for_each.item.app_id +\u0027)\"\\n      },\\n\u0027;"}}</script>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:19:27</sys_created_on>
+        <sys_id>ad10b72397dfc214b4b27ca0f053af1e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:53:10</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">c5b17be397dfc214b4b27ca0f053afe4</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="CICD Batch Deployment">4fbd6f2f979fc214b4b27ca0f053aff9</flow>
+        <flow_variable/>
+        <flow_variables_assigned>install_plan</flow_variables_assigned>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:11:06</sys_created_on>
+        <sys_id>6b2e2b6f979fc214b4b27ca0f053af93</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="STA CICD">ffab9723975fc214b4b27ca0f053aff0</sys_scope>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:53:22</sys_updated_on>
+        <ui_id>e677d3f8-44af-41fb-b2c3-5dd72176f5e8</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=6b2e2b6f979fc214b4b27ca0f053af93"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_4fbd6f2f979fc214b4b27ca0f053aff9^id=6b2e2b6f979fc214b4b27ca0f053af93"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=6b2e2b6f979fc214b4b27ca0f053af93"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=6b2e2b6f979fc214b4b27ca0f053af93^sys_idNOT IN178e27af979fc214b4b27ca0f053af93"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>install_plan</input_name>
+        <instance>6b2e2b6f979fc214b4b27ca0f053af93</instance>
+        <referenced_table>sys_hub_flow_logic</referenced_table>
+        <script>{"install_plan":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value. \n**Order number is offset by +1 in Error Handling Section.\n**Available options display upon pressing \".\" after fd_data\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\nreturn \u0027{\\n   \"name\": \"Install intial required plugins\",\\n   \"notes\": \"Installs initially required applications and plugins\",\\n   \"packages\": [\\n\u0027;\n"}}</script>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:12:44</sys_created_on>
+        <sys_id>178e27af979fc214b4b27ca0f053af93</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:12:44</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">41b17be397dfc214b4b27ca0f053aff7</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="CICD Batch Deployment">4fbd6f2f979fc214b4b27ca0f053aff9</flow>
+        <flow_variable/>
+        <flow_variables_assigned>install_plan</flow_variables_assigned>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>7e7a317f-3c16-46fb-b3ad-c84bec472435</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:18:12</sys_created_on>
+        <sys_id>6fcf27ef979fc214b4b27ca0f053afde</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_scope display_value="STA CICD">ffab9723975fc214b4b27ca0f053aff0</sys_scope>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:53:22</sys_updated_on>
+        <ui_id>820d24d3-b93c-4cee-81ec-353dacebafe1</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=6fcf27ef979fc214b4b27ca0f053afde"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_4fbd6f2f979fc214b4b27ca0f053aff9^id=6fcf27ef979fc214b4b27ca0f053afde"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=6fcf27ef979fc214b4b27ca0f053afde"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=6fcf27ef979fc214b4b27ca0f053afde^sys_idNOT IN59ef272397dfc214b4b27ca0f053af02"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>install_plan</input_name>
+        <instance>6fcf27ef979fc214b4b27ca0f053afde</instance>
+        <referenced_table>sys_hub_flow_logic</referenced_table>
+        <script>{"install_plan":{"scriptActive":true,"script":"return fd_data.flow_var.install_plan + \u0027      {\\n         \"id\": \"\u0027 + fd_data._3__for_each.item.install_key + \u0027\",\\n         \"type\": \"\u0027 + fd_data._3__for_each.item.type + \u0027\",\\n         \"load_demo_data\": false,\\n         \"notes\": \"\u0027 + fd_data._3__for_each.item.name + \u0027(\u0027 + fd_data._3__for_each.item.app_id +\u0027)\",\\n         \"requested_version\": \"\u0027 + fd_data._3__for_each.item.version + \u0027\"\\n      },\\n\u0027;\n"}}</script>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:18:36</sys_created_on>
+        <sys_id>59ef272397dfc214b4b27ca0f053af02</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:52:33</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">91b1bbe397dfc214b4b27ca0f053af12</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="CICD Batch Deployment">4fbd6f2f979fc214b4b27ca0f053aff9</flow>
+        <flow_variable/>
+        <flow_variables_assigned>install_plan</flow_variables_assigned>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>8</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:19:44</sys_created_on>
+        <sys_id>8e207bef979fc214b4b27ca0f053af4d</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="STA CICD">ffab9723975fc214b4b27ca0f053aff0</sys_scope>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:53:22</sys_updated_on>
+        <ui_id>c5d0c748-5de4-4c9b-a8bf-185a48287eb6</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=8e207bef979fc214b4b27ca0f053af4d"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_4fbd6f2f979fc214b4b27ca0f053aff9^id=8e207bef979fc214b4b27ca0f053af4d"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=8e207bef979fc214b4b27ca0f053af4d"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=8e207bef979fc214b4b27ca0f053af4d^sys_idNOT IN1e30bb2397dfc214b4b27ca0f053af61"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>install_plan</input_name>
+        <instance>8e207bef979fc214b4b27ca0f053af4d</instance>
+        <referenced_table>sys_hub_flow_logic</referenced_table>
+        <script>{"install_plan":{"scriptActive":true,"script":"var str \u003d fd_data.flow_var.install_plan;\n\nif (fd_data._2__look_up_records.count \u003e 0)\n    str \u003d str.replace(/,([^,]*)$/, \u0027$1\u0027)\n\nreturn str + \u0027   ]\\n}\\n\u0027;"}}</script>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:20:02</sys_created_on>
+        <sys_id>1e30bb2397dfc214b4b27ca0f053af61</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:20:02</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">c1b1bbe397dfc214b4b27ca0f053af08</block>
+        <comment/>
+        <connected_to>7e7a317f-3c16-46fb-b3ad-c84bec472435</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="CICD Batch Deployment">4fbd6f2f979fc214b4b27ca0f053aff9</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>f83052d6-f124-4566-8eb3-c0d1d17a0fd2</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:18:53</sys_created_on>
+        <sys_id>9dff272397dfc214b4b27ca0f053af34</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="STA CICD">ffab9723975fc214b4b27ca0f053aff0</sys_scope>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:53:22</sys_updated_on>
+        <ui_id>c4b44d90-2bb3-43e4-9a49-bff7ae19b0ae</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=9dff272397dfc214b4b27ca0f053af34"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_4fbd6f2f979fc214b4b27ca0f053aff9^id=9dff272397dfc214b4b27ca0f053af34"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=9dff272397dfc214b4b27ca0f053af34"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=9dff272397dfc214b4b27ca0f053af34"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">89b17be397dfc214b4b27ca0f053aff1</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="CICD Batch Deployment">4fbd6f2f979fc214b4b27ca0f053aff9</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>f83052d6-f124-4566-8eb3-c0d1d17a0fd2</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:17:01</sys_created_on>
+        <sys_id>de8f6bef979fc214b4b27ca0f053af43</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="STA CICD">ffab9723975fc214b4b27ca0f053aff0</sys_scope>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:53:22</sys_updated_on>
+        <ui_id>7e7a317f-3c16-46fb-b3ad-c84bec472435</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=de8f6bef979fc214b4b27ca0f053af43"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>de8f6bef979fc214b4b27ca0f053af43</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:17:55</sys_created_on>
+        <sys_id>13bf232397dfc214b4b27ca0f053af81</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:17:55</sys_updated_on>
+        <value>Type is Application</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_4fbd6f2f979fc214b4b27ca0f053aff9^id=de8f6bef979fc214b4b27ca0f053af43"/>
+    <sys_element_mapping action="delete_multiple" query="id=de8f6bef979fc214b4b27ca0f053af43"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>de8f6bef979fc214b4b27ca0f053af43</id>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:17:55</sys_created_on>
+        <sys_id>9fbf232397dfc214b4b27ca0f053af80</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:17:55</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{f83052d6-f124-4566-8eb3-c0d1d17a0fd2.item.type}}=application</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>de8f6bef979fc214b4b27ca0f053af43</id>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:17:55</sys_created_on>
+        <sys_id>dbbf232397dfc214b4b27ca0f053af80</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:17:55</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=de8f6bef979fc214b4b27ca0f053af43"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=de8f6bef979fc214b4b27ca0f053af43"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=4fbd6f2f979fc214b4b27ca0f053aff9"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=4fbd6f2f979fc214b4b27ca0f053aff9^sys_idNOT INae6e63af979fc214b4b27ca0f053af04"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=62049c20-ef37-438c-8ede-e9d967d97c91</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>install_plan</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Install Plan</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="CICD Batch Deployment">4fbd6f2f979fc214b4b27ca0f053aff9</model>
+        <model_id>4fbd6f2f979fc214b4b27ca0f053aff9</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_4fbd6f2f979fc214b4b27ca0f053aff9</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:12:08</sys_created_on>
+        <sys_id>ae6e63af979fc214b4b27ca0f053af04</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="STA CICD">ffab9723975fc214b4b27ca0f053aff0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:24:16</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_4fbd6f2f979fc214b4b27ca0f053aff9"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_4fbd6f2f979fc214b4b27ca0f053aff9"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_4fbd6f2f979fc214b4b27ca0f053aff9"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_4fbd6f2f979fc214b4b27ca0f053aff9"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>25000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Automatic Deployment of Applications and Plugins</description>
+        <flow_priority/>
+        <internal_name>cicd_batch_deployment</internal_name>
+        <label_cache>[{"name":"dd07cc85-50f1-483c-9262-061a5b668427.results_id","label":"9 - Batch Install➛Results ID","reference_display":"Results ID","type":"string","base_type":"string","usedInstances":{"c32257ca-f5f0-4fd8-a53b-df60b55cf511":["result_id"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"1a379e2c-cca9-462a-8e5c-be81f54ae2c2"}},{"name":"flow_variable.install_plan","label":"Flow Variables➛Install Plan","type":"string","base_type":"string","usedInstances":{"dd07cc85-50f1-483c-9262-061a5b668427":["batch_plan"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"62049c20-ef37-438c-8ede-e9d967d97c91"}},{"name":"f83052d6-f124-4566-8eb3-c0d1d17a0fd2.item.type","label":"3 - For Each➛CICD Install Apps Record➛Type","reference":"","reference_display":"Type","type":"choice","base_type":"choice","parent_table_name":"x_275773_sta_cicd_cicd_install_apps","column_name":"type","choices":[{"missing":false,"label":"Application","used":false,"image":"","rawLabel":"Application","selected":false,"reference":false,"value":"application","parameters":{"name":"x_275773_sta_cicd_cicd_install_apps"}},{"missing":false,"label":"Plugin","used":false,"image":"","rawLabel":"Plugin","selected":false,"reference":false,"value":"plugin","parameters":{"name":"x_275773_sta_cicd_cicd_install_apps"}}],"usedInstances":{"7e7a317f-3c16-46fb-b3ad-c84bec472435":["condition"]}},{"name":"db84ade7-1c19-4425-a294-c10f60b8a719.Records","label":"2 - Look Up Records➛CICD Install Apps Records","reference":"x_275773_sta_cicd_cicd_install_apps","reference_display":"CICD Install Apps","type":"records","base_type":"records","usedInstances":{"f83052d6-f124-4566-8eb3-c0d1d17a0fd2":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master>true</master>
+        <name>CICD Batch Deployment</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="CICD Batch Deployment">4fbd6f2f979fc214b4b27ca0f053aff9</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:26:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a5b1bbe397dfc214b4b27ca0f053afef</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="STA CICD">ffab9723975fc214b4b27ca0f053aff0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:53:21</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=a5b1bbe397dfc214b4b27ca0f053afef"/>
+    <sys_variable_value action="delete_multiple" query="document_key=a5b1bbe397dfc214b4b27ca0f053afef"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=a5b1bbe397dfc214b4b27ca0f053afef^sys_idNOT IN39b1fbe397dfc214b4b27ca0f053af55"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="CICD Batch Deployment">a5b1bbe397dfc214b4b27ca0f053afef</flow>
+        <name>Run Once</name>
+        <remote_sys_id/>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:26:33</sys_created_on>
+        <sys_id>39b1fbe397dfc214b4b27ca0f053af55</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:53:22</sys_updated_on>
+        <trigger_definition display_value="Run Once">0a76e504c32222002841b63b12d3aeac</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>run_once</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=39b1fbe397dfc214b4b27ca0f053af55"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>39b1fbe397dfc214b4b27ca0f053af55</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:26:33</sys_created_on>
+        <sys_id>b1b1fbe397dfc214b4b27ca0f053af56</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:26:33</sys_updated_on>
+        <value>2024-07-16 05:10:00</value>
+        <variable display_value="Run in">92afcd94c32222002841b63b12d3aee8</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_input_0a76e504c32222002841b63b12d3aeac^id=39b1fbe397dfc214b4b27ca0f053af55"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=a5b1bbe397dfc214b4b27ca0f053afef"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=a5b1bbe397dfc214b4b27ca0f053afef^sys_idNOT INe5b1bbe397dfc214b4b27ca0f053aff0"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>a5b1bbe397dfc214b4b27ca0f053afef</id>
+        <name>CICD Batch Deployment</name>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:26:32</sys_created_on>
+        <sys_id>e5b1bbe397dfc214b4b27ca0f053aff0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:26:32</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=e5b1bbe397dfc214b4b27ca0f053aff0"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=a5b1bbe397dfc214b4b27ca0f053afef"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=a5b1bbe397dfc214b4b27ca0f053afef"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=a5b1bbe397dfc214b4b27ca0f053afef"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=a5b1bbe397dfc214b4b27ca0f053afef^sys_idNOT INb5b1fbe397dfc214b4b27ca0f053af26,b5b1fbe397dfc214b4b27ca0f053af3e,b5b1fbe397dfc214b4b27ca0f053af53"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="CICD Batch Deployment">a5b1bbe397dfc214b4b27ca0f053afef</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:26:33</sys_created_on>
+        <sys_id>b5b1fbe397dfc214b4b27ca0f053af26</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="STA CICD">ffab9723975fc214b4b27ca0f053aff0</sys_scope>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:53:20</sys_updated_on>
+        <ui_id>db84ade7-1c19-4425-a294-c10f60b8a719</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b5b1fbe397dfc214b4b27ca0f053af26"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b5b1fbe397dfc214b4b27ca0f053af26</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:26:33</sys_created_on>
+        <sys_id>3db1fbe397dfc214b4b27ca0f053af28</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:26:33</sys_updated_on>
+        <value>name</value>
+        <variable display_value="Order by">c7400a1587003300663ca1bb36cb0b55</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b5b1fbe397dfc214b4b27ca0f053af26</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:26:33</sys_created_on>
+        <sys_id>b1b1fbe397dfc214b4b27ca0f053af29</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:26:33</sys_updated_on>
+        <value>x_275773_sta_cicd_cicd_install_apps</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b5b1fbe397dfc214b4b27ca0f053af26</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:26:33</sys_created_on>
+        <sys_id>fdb1fbe397dfc214b4b27ca0f053af28</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:26:33</sys_updated_on>
+        <value>status=install</value>
+        <variable display_value="Conditions">8f400a1587003300663ca1bb36cb0b50</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b^id=b5b1fbe397dfc214b4b27ca0f053af26"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b5b1fbe397dfc214b4b27ca0f053af26"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b5b1fbe397dfc214b4b27ca0f053af26"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Batch Install">89f446ebc3031010ca199a038a40dd7b</action_type>
+        <action_type_parent display_value="Batch Install">468535e3c3031010ca199a038a40dd3d</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="CICD Batch Deployment">a5b1bbe397dfc214b4b27ca0f053afef</flow>
+        <generation_source/>
+        <order>9</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:26:33</sys_created_on>
+        <sys_id>b5b1fbe397dfc214b4b27ca0f053af3e</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="STA CICD">ffab9723975fc214b4b27ca0f053aff0</sys_scope>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:53:20</sys_updated_on>
+        <ui_id>dd07cc85-50f1-483c-9262-061a5b668427</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b5b1fbe397dfc214b4b27ca0f053af3e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b5b1fbe397dfc214b4b27ca0f053af3e</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:26:33</sys_created_on>
+        <sys_id>71b1fbe397dfc214b4b27ca0f053af40</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:26:33</sys_updated_on>
+        <value>1fbbaf6b979fc214b4b27ca0f053af89</value>
+        <variable display_value="Credential Alias">0df446ebc3031010ca199a038a40dd82</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=b5b1fbe397dfc214b4b27ca0f053af3e"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>batch_plan</field>
+        <id>b5b1fbe397dfc214b4b27ca0f053af3e</id>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:26:33</sys_created_on>
+        <sys_id>fdb1fbe397dfc214b4b27ca0f053af3f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:26:33</sys_updated_on>
+        <table>var__m_sys_hub_action_input_89f446ebc3031010ca199a038a40dd7b</table>
+        <value>{{flow_variable.install_plan}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>credential_alias</field>
+        <id>b5b1fbe397dfc214b4b27ca0f053af3e</id>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:26:33</sys_created_on>
+        <sys_id>3db1fbe397dfc214b4b27ca0f053af3f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:26:33</sys_updated_on>
+        <table>var__m_sys_hub_action_input_89f446ebc3031010ca199a038a40dd7b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b5b1fbe397dfc214b4b27ca0f053af3e^sys_idNOT INf5b1fbe397dfc214b4b27ca0f053af3f"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>instance_url</input_name>
+        <instance>b5b1fbe397dfc214b4b27ca0f053af3e</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"instance_url":{"scriptActive":true,"script":"var instance \u003d gs.getProperty(\u0027instance_name\u0027);\nreturn \u0027https://\u0027 + instance + \u0027.service-now.com\u0027;"}}</script>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:26:33</sys_created_on>
+        <sys_id>f5b1fbe397dfc214b4b27ca0f053af3f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:26:33</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b5b1fbe397dfc214b4b27ca0f053af3e"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Batch Results">64ca16f8c3131010ca199a038a40dda3</action_type>
+        <action_type_parent display_value="Batch Results">e43284c4c3931010ca199a038a40dd03</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="CICD Batch Deployment">a5b1bbe397dfc214b4b27ca0f053afef</flow>
+        <generation_source/>
+        <order>10</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:26:33</sys_created_on>
+        <sys_id>b5b1fbe397dfc214b4b27ca0f053af53</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="STA CICD">ffab9723975fc214b4b27ca0f053aff0</sys_scope>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:53:21</sys_updated_on>
+        <ui_id>c32257ca-f5f0-4fd8-a53b-df60b55cf511</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b5b1fbe397dfc214b4b27ca0f053af53"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b5b1fbe397dfc214b4b27ca0f053af53</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:26:33</sys_created_on>
+        <sys_id>35b1fbe397dfc214b4b27ca0f053af55</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:26:33</sys_updated_on>
+        <value>1fbbaf6b979fc214b4b27ca0f053af89</value>
+        <variable display_value="Credential Alias">a8ca16f8c3131010ca199a038a40dda4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=b5b1fbe397dfc214b4b27ca0f053af53"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>credential_alias</field>
+        <id>b5b1fbe397dfc214b4b27ca0f053af53</id>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:26:33</sys_created_on>
+        <sys_id>fdb1fbe397dfc214b4b27ca0f053af54</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:26:33</sys_updated_on>
+        <table>var__m_sys_hub_action_input_64ca16f8c3131010ca199a038a40dda3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>result_id</field>
+        <id>b5b1fbe397dfc214b4b27ca0f053af53</id>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:26:33</sys_created_on>
+        <sys_id>b1b1fbe397dfc214b4b27ca0f053af55</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:26:33</sys_updated_on>
+        <table>var__m_sys_hub_action_input_64ca16f8c3131010ca199a038a40dda3</table>
+        <value>{{dd07cc85-50f1-483c-9262-061a5b668427.results_id}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b5b1fbe397dfc214b4b27ca0f053af53^sys_idNOT INb5b1fbe397dfc214b4b27ca0f053af54,b9b1fbe397dfc214b4b27ca0f053af54"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>instance_url</input_name>
+        <instance>b5b1fbe397dfc214b4b27ca0f053af53</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"instance_url":{"scriptActive":true,"script":"var instance \u003d gs.getProperty(\u0027instance_name\u0027);\nreturn \u0027https://\u0027 + instance + \u0027.service-now.com\u0027;"}}</script>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:26:33</sys_created_on>
+        <sys_id>b5b1fbe397dfc214b4b27ca0f053af54</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:26:33</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <input_name>result_id</input_name>
+        <instance>b5b1fbe397dfc214b4b27ca0f053af53</instance>
+        <referenced_table>sys_hub_action_instance</referenced_table>
+        <script>{"result_id":{"scriptActive":false}}</script>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:26:33</sys_created_on>
+        <sys_id>b9b1fbe397dfc214b4b27ca0f053af54</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:26:33</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b5b1fbe397dfc214b4b27ca0f053af53"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=a5b1bbe397dfc214b4b27ca0f053afef"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=a5b1bbe397dfc214b4b27ca0f053afef^sys_idNOT IN31b1fbe397dfc214b4b27ca0f053af0c,35b1fbe397dfc214b4b27ca0f053af17,3db1fbe397dfc214b4b27ca0f053af0f,71b1fbe397dfc214b4b27ca0f053af1a,b1b1fbe397dfc214b4b27ca0f053af1d,b9b1fbe397dfc214b4b27ca0f053af08,f1b1fbe397dfc214b4b27ca0f053af14"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">c1b17be397dfc214b4b27ca0f053afec</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="CICD Batch Deployment">a5b1bbe397dfc214b4b27ca0f053afef</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:26:33</sys_created_on>
+        <sys_id>31b1fbe397dfc214b4b27ca0f053af0c</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="STA CICD">ffab9723975fc214b4b27ca0f053aff0</sys_scope>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:53:20</sys_updated_on>
+        <ui_id>f83052d6-f124-4566-8eb3-c0d1d17a0fd2</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=31b1fbe397dfc214b4b27ca0f053af0c"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_a5b1bbe397dfc214b4b27ca0f053afef^id=31b1fbe397dfc214b4b27ca0f053af0c"/>
+    <sys_element_mapping action="delete_multiple" query="id=31b1fbe397dfc214b4b27ca0f053af0c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>31b1fbe397dfc214b4b27ca0f053af0c</id>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:26:33</sys_created_on>
+        <sys_id>b9b1fbe397dfc214b4b27ca0f053af0e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:26:33</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{db84ade7-1c19-4425-a294-c10f60b8a719.Records}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=31b1fbe397dfc214b4b27ca0f053af0c"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=31b1fbe397dfc214b4b27ca0f053af0c"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">c1b1bbe397dfc214b4b27ca0f053af08</block>
+        <comment/>
+        <connected_to>7e7a317f-3c16-46fb-b3ad-c84bec472435</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="CICD Batch Deployment">a5b1bbe397dfc214b4b27ca0f053afef</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>f83052d6-f124-4566-8eb3-c0d1d17a0fd2</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:26:33</sys_created_on>
+        <sys_id>35b1fbe397dfc214b4b27ca0f053af17</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="STA CICD">ffab9723975fc214b4b27ca0f053aff0</sys_scope>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:53:20</sys_updated_on>
+        <ui_id>c4b44d90-2bb3-43e4-9a49-bff7ae19b0ae</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=35b1fbe397dfc214b4b27ca0f053af17"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_a5b1bbe397dfc214b4b27ca0f053afef^id=35b1fbe397dfc214b4b27ca0f053af17"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=35b1fbe397dfc214b4b27ca0f053af17"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=35b1fbe397dfc214b4b27ca0f053af17"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">89b17be397dfc214b4b27ca0f053aff1</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="CICD Batch Deployment">a5b1bbe397dfc214b4b27ca0f053afef</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>f83052d6-f124-4566-8eb3-c0d1d17a0fd2</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:26:33</sys_created_on>
+        <sys_id>3db1fbe397dfc214b4b27ca0f053af0f</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="STA CICD">ffab9723975fc214b4b27ca0f053aff0</sys_scope>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:53:20</sys_updated_on>
+        <ui_id>7e7a317f-3c16-46fb-b3ad-c84bec472435</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=3db1fbe397dfc214b4b27ca0f053af0f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>3db1fbe397dfc214b4b27ca0f053af0f</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:26:33</sys_created_on>
+        <sys_id>fdb1fbe397dfc214b4b27ca0f053af12</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:26:33</sys_updated_on>
+        <value>Type is Application</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_a5b1bbe397dfc214b4b27ca0f053afef^id=3db1fbe397dfc214b4b27ca0f053af0f"/>
+    <sys_element_mapping action="delete_multiple" query="id=3db1fbe397dfc214b4b27ca0f053af0f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>3db1fbe397dfc214b4b27ca0f053af0f</id>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:26:33</sys_created_on>
+        <sys_id>7db1fbe397dfc214b4b27ca0f053af12</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:26:33</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{f83052d6-f124-4566-8eb3-c0d1d17a0fd2.item.type}}=application</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>3db1fbe397dfc214b4b27ca0f053af0f</id>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:26:33</sys_created_on>
+        <sys_id>b9b1fbe397dfc214b4b27ca0f053af12</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:26:33</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=3db1fbe397dfc214b4b27ca0f053af0f"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=3db1fbe397dfc214b4b27ca0f053af0f"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">51b1bbe397dfc214b4b27ca0f053af0d</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="CICD Batch Deployment">a5b1bbe397dfc214b4b27ca0f053afef</flow>
+        <flow_variable/>
+        <flow_variables_assigned>install_plan</flow_variables_assigned>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>c4b44d90-2bb3-43e4-9a49-bff7ae19b0ae</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:26:33</sys_created_on>
+        <sys_id>71b1fbe397dfc214b4b27ca0f053af1a</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="STA CICD">ffab9723975fc214b4b27ca0f053aff0</sys_scope>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:53:20</sys_updated_on>
+        <ui_id>5d87afb8-d1c8-45b5-9ecb-db7c5a4e5b8c</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=71b1fbe397dfc214b4b27ca0f053af1a"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_a5b1bbe397dfc214b4b27ca0f053afef^id=71b1fbe397dfc214b4b27ca0f053af1a"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=71b1fbe397dfc214b4b27ca0f053af1a"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=71b1fbe397dfc214b4b27ca0f053af1a^sys_idNOT IN31b1fbe397dfc214b4b27ca0f053af1b"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>install_plan</input_name>
+        <instance>71b1fbe397dfc214b4b27ca0f053af1a</instance>
+        <referenced_table>sys_hub_flow_logic</referenced_table>
+        <script>{"install_plan":{"scriptActive":true,"script":"return fd_data.flow_var.install_plan + \u0027      {\\n         \"id\": \"\u0027 + fd_data._3__for_each.item.install_key + \u0027\",\\n         \"type\": \"\u0027 + fd_data._3__for_each.item.type + \u0027\",\\n         \"notes\": \"\u0027 + fd_data._3__for_each.item.name + \u0027(\u0027 + fd_data._3__for_each.item.app_id +\u0027)\"\\n      },\\n\u0027;"}}</script>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:26:33</sys_created_on>
+        <sys_id>31b1fbe397dfc214b4b27ca0f053af1b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:53:20</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">91b1bbe397dfc214b4b27ca0f053af12</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="CICD Batch Deployment">a5b1bbe397dfc214b4b27ca0f053afef</flow>
+        <flow_variable/>
+        <flow_variables_assigned>install_plan</flow_variables_assigned>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>8</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:26:33</sys_created_on>
+        <sys_id>b1b1fbe397dfc214b4b27ca0f053af1d</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="STA CICD">ffab9723975fc214b4b27ca0f053aff0</sys_scope>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:53:20</sys_updated_on>
+        <ui_id>c5d0c748-5de4-4c9b-a8bf-185a48287eb6</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=b1b1fbe397dfc214b4b27ca0f053af1d"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_a5b1bbe397dfc214b4b27ca0f053afef^id=b1b1fbe397dfc214b4b27ca0f053af1d"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=b1b1fbe397dfc214b4b27ca0f053af1d"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b1b1fbe397dfc214b4b27ca0f053af1d^sys_idNOT IN71b1fbe397dfc214b4b27ca0f053af1e"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>install_plan</input_name>
+        <instance>b1b1fbe397dfc214b4b27ca0f053af1d</instance>
+        <referenced_table>sys_hub_flow_logic</referenced_table>
+        <script>{"install_plan":{"scriptActive":true,"script":"var str \u003d fd_data.flow_var.install_plan;\n\nif (fd_data._2__look_up_records.count \u003e 0)\n    str \u003d str.replace(/,([^,]*)$/, \u0027$1\u0027)\n\nreturn str + \u0027   ]\\n}\\n\u0027;"}}</script>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:26:33</sys_created_on>
+        <sys_id>71b1fbe397dfc214b4b27ca0f053af1e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:26:33</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">c5b17be397dfc214b4b27ca0f053afe4</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="CICD Batch Deployment">a5b1bbe397dfc214b4b27ca0f053afef</flow>
+        <flow_variable/>
+        <flow_variables_assigned>install_plan</flow_variables_assigned>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:26:33</sys_created_on>
+        <sys_id>b9b1fbe397dfc214b4b27ca0f053af08</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="STA CICD">ffab9723975fc214b4b27ca0f053aff0</sys_scope>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:53:20</sys_updated_on>
+        <ui_id>e677d3f8-44af-41fb-b2c3-5dd72176f5e8</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=b9b1fbe397dfc214b4b27ca0f053af08"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_a5b1bbe397dfc214b4b27ca0f053afef^id=b9b1fbe397dfc214b4b27ca0f053af08"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=b9b1fbe397dfc214b4b27ca0f053af08"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b9b1fbe397dfc214b4b27ca0f053af08^sys_idNOT INb9b1fbe397dfc214b4b27ca0f053af09"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>install_plan</input_name>
+        <instance>b9b1fbe397dfc214b4b27ca0f053af08</instance>
+        <referenced_table>sys_hub_flow_logic</referenced_table>
+        <script>{"install_plan":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value. \n**Order number is offset by +1 in Error Handling Section.\n**Available options display upon pressing \".\" after fd_data\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\nreturn \u0027{\\n   \"name\": \"Install intial required plugins\",\\n   \"notes\": \"Installs initially required applications and plugins\",\\n   \"packages\": [\\n\u0027;\n"}}</script>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:26:33</sys_created_on>
+        <sys_id>b9b1fbe397dfc214b4b27ca0f053af09</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:26:33</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">41b17be397dfc214b4b27ca0f053aff7</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="CICD Batch Deployment">a5b1bbe397dfc214b4b27ca0f053afef</flow>
+        <flow_variable/>
+        <flow_variables_assigned>install_plan</flow_variables_assigned>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>7e7a317f-3c16-46fb-b3ad-c84bec472435</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:26:33</sys_created_on>
+        <sys_id>f1b1fbe397dfc214b4b27ca0f053af14</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="STA CICD">ffab9723975fc214b4b27ca0f053aff0</sys_scope>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:53:20</sys_updated_on>
+        <ui_id>820d24d3-b93c-4cee-81ec-353dacebafe1</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=f1b1fbe397dfc214b4b27ca0f053af14"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_a5b1bbe397dfc214b4b27ca0f053afef^id=f1b1fbe397dfc214b4b27ca0f053af14"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=f1b1fbe397dfc214b4b27ca0f053af14"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=f1b1fbe397dfc214b4b27ca0f053af14^sys_idNOT INb1b1fbe397dfc214b4b27ca0f053af15"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>install_plan</input_name>
+        <instance>f1b1fbe397dfc214b4b27ca0f053af14</instance>
+        <referenced_table>sys_hub_flow_logic</referenced_table>
+        <script>{"install_plan":{"scriptActive":true,"script":"return fd_data.flow_var.install_plan + \u0027      {\\n         \"id\": \"\u0027 + fd_data._3__for_each.item.install_key + \u0027\",\\n         \"type\": \"\u0027 + fd_data._3__for_each.item.type + \u0027\",\\n         \"load_demo_data\": false,\\n         \"notes\": \"\u0027 + fd_data._3__for_each.item.name + \u0027(\u0027 + fd_data._3__for_each.item.app_id +\u0027)\",\\n         \"requested_version\": \"\u0027 + fd_data._3__for_each.item.version + \u0027\"\\n      },\\n\u0027;\n"}}</script>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:26:33</sys_created_on>
+        <sys_id>b1b1fbe397dfc214b4b27ca0f053af15</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:53:20</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=a5b1bbe397dfc214b4b27ca0f053afef"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=a5b1bbe397dfc214b4b27ca0f053afef^sys_idNOT INe1b1fbe397dfc214b4b27ca0f053af02"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=62049c20-ef37-438c-8ede-e9d967d97c91</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>install_plan</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Install Plan</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="CICD Batch Deployment">a5b1bbe397dfc214b4b27ca0f053afef</model>
+        <model_id>a5b1bbe397dfc214b4b27ca0f053afef</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_a5b1bbe397dfc214b4b27ca0f053afef</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:26:33</sys_created_on>
+        <sys_id>e1b1fbe397dfc214b4b27ca0f053af02</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="STA CICD">ffab9723975fc214b4b27ca0f053aff0</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:26:33</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_a5b1bbe397dfc214b4b27ca0f053afef"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_a5b1bbe397dfc214b4b27ca0f053afef"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_a5b1bbe397dfc214b4b27ca0f053afef"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_a5b1bbe397dfc214b4b27ca0f053afef"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>4fbd6f2f979fc214b4b27ca0f053aff9</sys_id>
+        <latest_snapshot>a5b1bbe397dfc214b4b27ca0f053afef</latest_snapshot>
+        <compiler_build/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=4fbd6f2f979fc214b4b27ca0f053aff9^sys_idNOT IN0ab1fbe397dfc214b4b27ca0f053afe3"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
+        <plan/>
+        <plan_id>4fbd6f2f979fc214b4b27ca0f053aff9</plan_id>
+        <snapshot>a5b1bbe397dfc214b4b27ca0f053afef</snapshot>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:26:35</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0ab1fbe397dfc214b4b27ca0f053afe3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:26:35</sys_updated_on>
+        <trigger display_value="">82b1fbe397dfc214b4b27ca0f053afe0</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=4fbd6f2f979fc214b4b27ca0f053aff9"/>
+</record_update>

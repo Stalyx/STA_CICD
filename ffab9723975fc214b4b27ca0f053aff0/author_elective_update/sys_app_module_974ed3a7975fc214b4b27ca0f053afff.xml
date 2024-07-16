@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="STA CICD">d34e57a3975fc214b4b27ca0f053afe0</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>NEW</link_type>
+        <map_page/>
+        <mobile_title>Create New</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_275773_sta_cicd_cicd_install_apps</name>
+        <order>2</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <require_confirmation>true</require_confirmation>
+        <roles/>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 07:01:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>974ed3a7975fc214b4b27ca0f053afff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Create New</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="STA CICD" source="x_275773_sta_cicd">ffab9723975fc214b4b27ca0f053aff0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="STA CICD">ffab9723975fc214b4b27ca0f053aff0</sys_scope>
+        <sys_update_name>sys_app_module_974ed3a7975fc214b4b27ca0f053afff</sys_update_name>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 07:01:44</sys_updated_on>
+        <timeline_page/>
+        <title>Create New</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="STA CICD">ffab9723975fc214b4b27ca0f053aff0</application>
+        <file_path/>
+        <instance_id>a9dbb6e6db51801449eac597059619f4</instance_id>
+        <instance_name>dev95322</instance_name>
+        <name>sys_app_module_974ed3a7975fc214b4b27ca0f053afff</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="STA CICD">d34e57a3975fc214b4b27ca0f053afe0</application><assessment/><device_type/><filter/><hint/><homepage/><image/><link_type>NEW</link_type><map_page/><mobile_title>Create New</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_275773_sta_cicd_cicd_install_apps</name><order>2</order><override_menu_roles>false</override_menu_roles><query/><report/><require_confirmation>true</require_confirmation><roles/><sys_class_name>sys_app_module</sys_class_name><sys_created_by>wzbsza</sys_created_by><sys_created_on>2024-07-16 07:01:44</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>974ed3a7975fc214b4b27ca0f053afff</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Create New</sys_name><sys_overrides/><sys_package display_value="STA CICD" source="x_275773_sta_cicd">ffab9723975fc214b4b27ca0f053aff0</sys_package><sys_policy/><sys_scope display_value="STA CICD">ffab9723975fc214b4b27ca0f053aff0</sys_scope><sys_update_name>sys_app_module_974ed3a7975fc214b4b27ca0f053afff</sys_update_name><sys_updated_by>wzbsza</sys_updated_by><sys_updated_on>2024-07-16 07:01:44</sys_updated_on><timeline_page/><title>Create New</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>-729963465</payload_hash>
+        <record_name>Create New</record_name>
+        <reverted_from/>
+        <source>88bb9723975fc214b4b27ca0f053aff5</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 07:01:44</sys_created_on>
+        <sys_id>d74e17a7975fc214b4b27ca0f053af01</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>190ba58dd240000001</sys_recorded_at>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 07:01:44</sys_updated_on>
+        <type>Module</type>
+        <update_guid>db4e17a7555fc2148b0e683ee9df8f00</update_guid>
+        <update_guid_history>db4e17a7555fc2148b0e683ee9df8f00:-729963465</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Create New">9ed33f6797dfc214b4b27ca0f053af1e</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:35:52</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>4c1b613393e84720a2998f19db6b04f9</sys_id>
+        <sys_metadata>974ed3a7975fc214b4b27ca0f053afff</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Create New</sys_name>
+        <sys_package display_value="STA CICD" source="x_275773_sta_cicd">ffab9723975fc214b4b27ca0f053aff0</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="STA CICD">ffab9723975fc214b4b27ca0f053aff0</sys_scope>
+        <sys_scope_delete display_value="">2f5dc47e033b44a0903119de47783640</sys_scope_delete>
+        <sys_update_name>sys_app_module_974ed3a7975fc214b4b27ca0f053afff</sys_update_name>
+        <sys_update_version display_value="sys_app_module_974ed3a7975fc214b4b27ca0f053afff">d74e17a7975fc214b4b27ca0f053af01</sys_update_version>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:35:52</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

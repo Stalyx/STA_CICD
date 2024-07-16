@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="CICD Deployment">d34e57a3975fc214b4b27ca0f053afe0</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>SCRIPT</link_type>
+        <map_page/>
+        <mobile_title>CICD Install Apps</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name/>
+        <order>500</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query>try {&#13;
+&#13;
+		// Start Asynchronously: Uncomment to run in background.&#13;
+		// sn_fd.FlowAPI.getRunner().flow('global.batch_install_servicenow_plugins').inBackground().run();&#13;
+				&#13;
+		// Execute Synchronously: Run in foreground.&#13;
+		var result = sn_fd.FlowAPI.getRunner().flow('global.batch_install_servicenow_plugins').inForeground().run();&#13;
+                &#13;
+                var contextId = result.getContextId();  // Retrieve the context ID from the result&#13;
+                var dateRun = result.getDate();&#13;
+                var domainUsed = result.getDomainId();  // Retrieve the Domain ID from the result.&#13;
+                var flowName = result.getFlowObjectName();&#13;
+                var flowObjectType = result.getFlowObjectType();&#13;
+                var outputs = result.getOutputs();            // Retrieve any outputs from the action execution.&#13;
+                var resultsUrl = outputs['approval'];  // Echo back the approval status for verification.&#13;
+&#13;
+&#13;
+               gs.print("Context ID:" + contextId );&#13;
+               gs.print("Date Run:" + dateRun );&#13;
+               gs.print("Flow Name:" + flowName );&#13;
+               gs.print("Flow Object Type:" + flowObjectType );&#13;
+               gs.print("Domain Used:" + domainUsed );&#13;
+               gs.print("Outputs :" + outputs.toString() ); &#13;
+               gs.print("Outputs URL :" + resultsUrl  );&#13;
+&#13;
+gs.print("Debug :" + result.debug());&#13;
+                &#13;
+&#13;
+&#13;
+&#13;
+&#13;
+&#13;
+&#13;
+		&#13;
+	} catch (ex) {&#13;
+		var message = ex.getMessage();&#13;
+		gs.error(message);&#13;
+	}</query>
+        <report/>
+        <require_confirmation>true</require_confirmation>
+        <roles/>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 07:01:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5b4ed3a7975fc214b4b27ca0f053affb</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Start CICD Batch Installation</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="STA CICD" source="x_275773_sta_cicd">ffab9723975fc214b4b27ca0f053aff0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="STA CICD">ffab9723975fc214b4b27ca0f053aff0</sys_scope>
+        <sys_update_name>sys_app_module_5b4ed3a7975fc214b4b27ca0f053affb</sys_update_name>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:36:12</sys_updated_on>
+        <timeline_page/>
+        <title>Start CICD Batch Installation</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+</record_update>

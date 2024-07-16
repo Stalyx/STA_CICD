@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="type" table="x_275773_sta_cicd_cicd_install_apps" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>type</element>
+            <name>x_275773_sta_cicd_cicd_install_apps</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>wzbsza</sys_created_by>
+            <sys_created_on>2024-07-16 07:24:16</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>type</sys_name>
+            <sys_package display_value="STA CICD" source="x_275773_sta_cicd">ffab9723975fc214b4b27ca0f053aff0</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="STA CICD">ffab9723975fc214b4b27ca0f053aff0</sys_scope>
+            <sys_update_name>sys_choice_x_275773_sta_cicd_cicd_install_apps_type</sys_update_name>
+            <sys_updated_by>wzbsza</sys_updated_by>
+            <sys_updated_on>2024-07-16 07:24:16</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Application</label>
+            <language>en</language>
+            <name>x_275773_sta_cicd_cicd_install_apps</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>wzbsza</sys_created_by>
+            <sys_created_on>2024-07-16 07:24:16</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wzbsza</sys_updated_by>
+            <sys_updated_on>2024-07-16 07:24:16</sys_updated_on>
+            <value>application</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Plugin</label>
+            <language>en</language>
+            <name>x_275773_sta_cicd_cicd_install_apps</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>wzbsza</sys_created_by>
+            <sys_created_on>2024-07-16 07:24:16</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>wzbsza</sys_updated_by>
+            <sys_updated_on>2024-07-16 07:24:16</sys_updated_on>
+            <value>plugin</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>20833ba797dfc214b4b27ca0f053afa4</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="x_275773_sta_cicd_cicd_install_apps">
+    <x_275773_sta_cicd_cicd_install_apps action="INSERT_OR_UPDATE">
+        <app_id>sn_decision_design</app_id>
+        <category>platform</category>
+        <comments>Is now OOTB there...</comments>
+        <install_key>d0c792f26a23783e71e1585192ef920b</install_key>
+        <name>Decision Builder</name>
+        <number>CICD0001023</number>
+        <status>retired</status>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:34:23</sys_created_on>
+        <sys_id>20833ba797dfc214b4b27ca0f053afa4</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:38:03</sys_updated_on>
+        <type>application</type>
+        <version>6.0.1</version>
+    </x_275773_sta_cicd_cicd_install_apps>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 08:48:14</sys_created_on>
+        <sys_id>a3a63bab97dfc214b4b27ca0f053af41</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Decision Builder</sys_name>
+        <sys_package display_value="STA CICD" source="x_275773_sta_cicd">ffab9723975fc214b4b27ca0f053aff0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="STA CICD">ffab9723975fc214b4b27ca0f053aff0</sys_scope>
+        <sys_update_name>sys_metadata_link_a3a63bab97dfc214b4b27ca0f053af41</sys_update_name>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 08:48:14</sys_updated_on>
+        <tablename>x_275773_sta_cicd_cicd_install_apps</tablename>
+    </sys_metadata_link>
+</record_update>

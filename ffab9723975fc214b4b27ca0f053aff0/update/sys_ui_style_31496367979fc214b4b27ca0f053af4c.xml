@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_style">
+    <sys_ui_style action="INSERT_OR_UPDATE">
+        <alt/>
+        <element>status</element>
+        <name>x_275773_sta_cicd_cicd_install_apps</name>
+        <style>background-color: green;</style>
+        <sys_class_name>sys_ui_style</sys_class_name>
+        <sys_created_by>wzbsza</sys_created_by>
+        <sys_created_on>2024-07-16 07:49:41</sys_created_on>
+        <sys_id>31496367979fc214b4b27ca0f053af4c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_275773_sta_cicd_cicd_install_apps</sys_name>
+        <sys_package display_value="STA CICD" source="x_275773_sta_cicd">ffab9723975fc214b4b27ca0f053aff0</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="STA CICD">ffab9723975fc214b4b27ca0f053aff0</sys_scope>
+        <sys_update_name>sys_ui_style_31496367979fc214b4b27ca0f053af4c</sys_update_name>
+        <sys_updated_by>wzbsza</sys_updated_by>
+        <sys_updated_on>2024-07-16 07:49:41</sys_updated_on>
+        <themed_style/>
+        <value>install</value>
+    </sys_ui_style>
+    <sys_translated_text action="delete_multiple" query="documentkey=31496367979fc214b4b27ca0f053af4c"/>
+</record_update>

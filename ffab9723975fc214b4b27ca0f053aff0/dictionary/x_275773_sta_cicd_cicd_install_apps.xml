@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="6d2e9f67975fc214b4b27ca0f053aff9" label="CICD Install Apps" max_length="40" name="x_275773_sta_cicd_cicd_install_apps" type="collection">
+        <element label="Name" mandatory="true" max_length="160" name="name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Install key" mandatory="true" max_length="40" name="install_key" type="string"/>
+        <element choice="3" default="install" label="Status" mandatory="true" max_length="20" name="status" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Planned" sequence="8" value="planned"/>
+                <element inactive_on_update="false" label="Inherited" sequence="3" value="inherited"/>
+                <element inactive_on_update="false" label="Install" sequence="0" value="install"/>
+                <element inactive_on_update="false" label="Not Required" sequence="4" value="not_required"/>
+                <element inactive_on_update="false" label="On Hold" sequence="9" value="on hold"/>
+                <element inactive_on_update="false" label="Installed" sequence="0" value="Installed"/>
+                <element inactive_on_update="false" label="DO NOT INSTALL" sequence="5" value="do_not_install"/>
+                <element inactive_on_update="false" label="Retired" sequence="6" value="retired"/>
+                <element inactive_on_update="false" label="Install (Store)" sequence="1" value="install_store"/>
+                <element inactive_on_update="false" label="Story" sequence="0" value="Story"/>
+                <element inactive_on_update="false" label="Evaluate" sequence="7" value="evaluate"/>
+                <element inactive_on_update="false" label="OOTB" sequence="2" value="ootb"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Comments" max_length="2000" name="comments" type="string"/>
+        <element choice="3" default="application" label="Type" mandatory="true" max_length="20" name="type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Application" sequence="0" value="application"/>
+                <element inactive_on_update="false" label="Plugin" sequence="1" value="plugin"/>
+            </choice>
+        </element>
+        <element label="Version" mandatory="true" max_length="20" name="version" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="App id" max_length="40" name="app_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" default="csm" label="Category" max_length="80" name="category" type="string">
+            <choice>
+                <element inactive_on_update="false" label="ITOM" sequence="7" value="itom"/>
+                <element inactive_on_update="false" label="SPM - Project Management" sequence="20" value="spm_project"/>
+                <element inactive_on_update="false" label="ITSM" sequence="11" value="itsm"/>
+                <element inactive_on_update="false" label="CSM" sequence="3" value="csm"/>
+                <element inactive_on_update="false" label="SecOps - VR" sequence="16" value="secops_vr"/>
+                <element inactive_on_update="false" label="ITSM - CMDB" sequence="0" value="ITSM - CMDB"/>
+                <element inactive_on_update="false" label="ITSM - Change Management" sequence="12" value="itsm_change"/>
+                <element inactive_on_update="false" label="ITSM - Incident Management" sequence="13" value="itsm_incident"/>
+                <element inactive_on_update="false" label="Platform" sequence="0" value="platform"/>
+                <element inactive_on_update="false" label="HR" sequence="4" value="hr"/>
+                <element inactive_on_update="false" label="Service Portal" sequence="17" value="serviceportal"/>
+                <element inactive_on_update="false" label="ITOM - Discovery" sequence="8" value="itom_discovery"/>
+                <element inactive_on_update="false" label="Visual Task Board" sequence="21" value="vtb"/>
+                <element inactive_on_update="false" label="Platform - CMDB" sequence="1" value="cmdb"/>
+                <element inactive_on_update="false" label="ITSM - Problem Management" sequence="14" value="itsm_problem"/>
+                <element inactive_on_update="false" label="IntegrationHub" sequence="5" value="integrationhub"/>
+                <element inactive_on_update="false" label="SPM" sequence="18" value="spm"/>
+                <element inactive_on_update="false" label="ITOM - Event Management" sequence="9" value="itom_event"/>
+                <element inactive_on_update="false" label="Mobile" sequence="6" value="mobile"/>
+                <element inactive_on_update="false" label="SPM - Demand Management" sequence="19" value="spm_demand"/>
+                <element inactive_on_update="false" label="ITOM - Service Mapping" sequence="10" value="itom_servicemapping"/>
+                <element inactive_on_update="false" label="Agile Development" sequence="2" value="agile"/>
+                <element inactive_on_update="false" label="SecOps - SIR" sequence="15" value="secops_sir"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="install_key"/>
+        </index>
+    </element>
+</database>
